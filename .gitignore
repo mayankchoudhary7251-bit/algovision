@@ -1,0 +1,58 @@
+# ============================================================
+# AlgoVision — .gitignore
+# Covers: Node.js, Java/Maven, Docker, IDEs, OS files, secrets
+# ============================================================
+
+# ─── Secrets & Environment Variables ───────────────────────
+# CRITICAL: Never commit .env files.
+# They contain passwords, API keys, and JWT secrets.
+.env
+.env.local
+.env.production
+.env.*.local
+
+# ─── Frontend — Node.js ────────────────────────────────────
+node_modules/
+apps/web/dist/
+apps/web/dist-ssr/
+apps/web/.vite/
+apps/web/coverage/
+
+# ─── Backend — Java / Maven ────────────────────────────────
+apps/api/target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/wrapper/maven-wrapper.jar
+
+# ─── IDEs & Editors ────────────────────────────────────────
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code (keep extensions.json for team recommendations)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# ─── OS Files ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ─── Logs ──────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+
+# ─── Test Coverage ─────────────────────────────────────────
+coverage/
+apps/api/target/site/
