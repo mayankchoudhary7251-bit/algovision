@@ -6,6 +6,7 @@ import { StatsSection } from '@/features/landing/components/StatsSection'
 import { AlgorithmsSection } from '@/features/landing/components/AlgorithmsSection'
 import { TechStackSection } from '@/features/landing/components/TechStackSection'
 import { FAQSection } from '@/features/landing/components/FAQSection'
+import { Footer } from '@/features/landing/components/Footer'
 
 function ComingSoonPage({ title }: { title: string }) {
   return (
@@ -31,6 +32,7 @@ function HomePage() {
         <TechStackSection />
         <FAQSection />
       </main>
+      <Footer />
     </div>
   )
 }
