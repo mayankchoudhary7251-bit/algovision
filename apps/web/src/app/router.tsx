@@ -5,6 +5,7 @@ import { FeaturesSection } from '@/features/landing/components/FeaturesSection'
 import { StatsSection } from '@/features/landing/components/StatsSection'
 import { AlgorithmsSection } from '@/features/landing/components/AlgorithmsSection'
 import { TechStackSection } from '@/features/landing/components/TechStackSection'
+import { FAQSection } from '@/features/landing/components/FAQSection'
 
 function ComingSoonPage({ title }: { title: string }) {
   return (
@@ -28,6 +29,7 @@ function HomePage() {
         <StatsSection />
         <AlgorithmsSection />
         <TechStackSection />
+        <FAQSection />
       </main>
     </div>
   )
