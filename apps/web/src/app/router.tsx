@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { Navbar } from '@/features/landing/components/Navbar'
+import { HeroSection } from '@/features/landing/components/HeroSection'
 
 function ComingSoonPage({ title }: { title: string }) {
   return (
@@ -15,15 +16,10 @@ function ComingSoonPage({ title }: { title: string }) {
 
 function HomePage() {
   return (
-    <div className="min-h-screen bg-gray-950 dark:bg-gray-950">
+    <div className="bg-gray-950 dark:bg-gray-950">
       <Navbar />
-      <main className="pt-16">
-        <div className="flex min-h-screen items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-5xl font-extrabold text-gradient">AlgoVision</h1>
-            <p className="mt-4 text-gray-400">Landing page coming next...</p>
-          </div>
-        </div>
+      <main>
+        <HeroSection />
       </main>
     </div>
   )
