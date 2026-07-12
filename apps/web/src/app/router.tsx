@@ -3,6 +3,7 @@ import { Navbar } from '@/features/landing/components/Navbar'
 import { HeroSection } from '@/features/landing/components/HeroSection'
 import { FeaturesSection } from '@/features/landing/components/FeaturesSection'
 import { StatsSection } from '@/features/landing/components/StatsSection'
+import { AlgorithmsSection } from '@/features/landing/components/AlgorithmsSection'
 
 function ComingSoonPage({ title }: { title: string }) {
   return (
@@ -24,6 +25,7 @@ function HomePage() {
         <HeroSection />
         <FeaturesSection />
         <StatsSection />
+        <AlgorithmsSection />
       </main>
     </div>
   )
