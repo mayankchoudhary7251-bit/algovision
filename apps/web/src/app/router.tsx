@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { Navbar } from '@/features/landing/components/Navbar'
 import { HeroSection } from '@/features/landing/components/HeroSection'
+import { FeaturesSection } from '@/features/landing/components/FeaturesSection'
 
 function ComingSoonPage({ title }: { title: string }) {
   return (
@@ -16,10 +17,11 @@ function ComingSoonPage({ title }: { title: string }) {
 
 function HomePage() {
   return (
-    <div className="bg-gray-950 dark:bg-gray-950">
+    <div className="bg-gray-950">
       <Navbar />
       <main>
         <HeroSection />
+        <FeaturesSection />
       </main>
     </div>
   )
@@ -28,12 +30,12 @@ function HomePage() {
 export function AppRouter() {
   return (
     <Routes>
-      <Route path="/"           element={<HomePage />} />
+      <Route path="/" element={<HomePage />} />
       <Route path="/visualizer" element={<ComingSoonPage title="Algorithm Visualizer" />} />
-      <Route path="/lab"        element={<ComingSoonPage title="Performance Lab" />} />
-      <Route path="/quiz"       element={<ComingSoonPage title="Quiz" />} />
+      <Route path="/lab" element={<ComingSoonPage title="Performance Lab" />} />
+      <Route path="/quiz" element={<ComingSoonPage title="Quiz" />} />
       <Route path="/playground" element={<ComingSoonPage title="Coding Playground" />} />
-      <Route path="/dashboard"  element={<ComingSoonPage title="Dashboard" />} />
+      <Route path="/dashboard" element={<ComingSoonPage title="Dashboard" />} />
     </Routes>
   )
 }
