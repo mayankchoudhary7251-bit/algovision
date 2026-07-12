@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Navbar } from '@/features/landing/components/Navbar'
 import { HeroSection } from '@/features/landing/components/HeroSection'
 import { FeaturesSection } from '@/features/landing/components/FeaturesSection'
+import { StatsSection } from '@/features/landing/components/StatsSection'
 
 function ComingSoonPage({ title }: { title: string }) {
   return (
@@ -22,6 +23,7 @@ function HomePage() {
       <main>
         <HeroSection />
         <FeaturesSection />
+        <StatsSection />
       </main>
     </div>
   )
