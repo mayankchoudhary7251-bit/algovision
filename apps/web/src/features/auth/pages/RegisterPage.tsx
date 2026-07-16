@@ -30,6 +30,7 @@ export function RegisterPage() {
     formState: { errors, isSubmitting },
   } = useForm<RegisterFormData>({
     resolver: zodResolver(registerSchema),
+    mode: 'onChange',
   })
 
   const passwordValue = watch('password', '')

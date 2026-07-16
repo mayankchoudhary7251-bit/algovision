@@ -12,6 +12,7 @@ import { Footer } from '@/features/landing/components/Footer'
 import { LoginPage } from '@/features/auth/pages/LoginPage'
 import { RegisterPage } from '@/features/auth/pages/RegisterPage'
 import { useAuthStore } from '@/features/auth/store/authStore'
+import { VisualizerPage } from '@/features/visualizer/pages/VisualizerPage'
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isAuthenticated } = useAuthStore()
@@ -68,7 +69,7 @@ export function AppRouter() {
         <Route path="/" element={<HomePage />} />
         <Route path="/auth/login" element={<LoginPage />} />
         <Route path="/auth/register" element={<RegisterPage />} />
-        <Route path="/visualizer" element={<ComingSoonPage title="Algorithm Visualizer" />} />
+        <Route path="/visualizer" element={<VisualizerPage />} />
         <Route path="/lab" element={<ComingSoonPage title="Performance Lab" />} />
         <Route path="/quiz" element={<ComingSoonPage title="Quiz" />} />
         <Route path="/playground" element={<ComingSoonPage title="Coding Playground" />} />
