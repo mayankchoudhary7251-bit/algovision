@@ -57,11 +57,13 @@ public class SecurityConfig {
      * Anything not listed here requires a valid JWT.
      */
     private static final String[] PUBLIC_ENDPOINTS = {
-        "/auth/**",          // login, register, refresh, forgot-password, reset-password
-        "/health",           // health check (used by Docker and deployment platforms)
-        "/actuator/health",  // Spring Boot actuator health
-        "/actuator/info",
-    };
+    "/auth/**",
+    "/health",
+    "/actuator/health",
+    "/actuator/info",
+    "/topics",
+    "/topics/**",
+};
 
     /**
      * SecurityFilterChain — defines the security rules for every HTTP request.

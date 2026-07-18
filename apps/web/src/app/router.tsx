@@ -1,3 +1,4 @@
+import { DashboardPage } from '@/features/dashboard/pages/DashboardPage'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import { Navbar } from '@/features/landing/components/Navbar'
@@ -74,13 +75,13 @@ export function AppRouter() {
         <Route path="/quiz" element={<ComingSoonPage title="Quiz" />} />
         <Route path="/playground" element={<ComingSoonPage title="Coding Playground" />} />
         <Route
-          path="/dashboard"
-          element={
-            <ProtectedRoute>
-              <ComingSoonPage title="Dashboard" />
-            </ProtectedRoute>
-          }
-        />
+  path="/dashboard"
+  element={
+    <ProtectedRoute>
+      <DashboardPage />
+    </ProtectedRoute>
+  }
+/>
       </Routes>
     </>
   )
