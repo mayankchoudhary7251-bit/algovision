@@ -29,3 +29,9 @@ logging:
     com.algovision: DEBUG
     org.springframework.security: DEBUG
     org.flywaydb: INFO
+
+jdoodle:
+  client-id: ${JDOODLE_CLIENT_ID}
+  client-secret: ${JDOODLE_CLIENT_SECRET}
+  api-url: https://api.jdoodle.com/v1/execute
+  timeout-seconds: 10
