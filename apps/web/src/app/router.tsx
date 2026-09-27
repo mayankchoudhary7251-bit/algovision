@@ -14,6 +14,7 @@ import { LoginPage } from '@/features/auth/pages/LoginPage'
 import { RegisterPage } from '@/features/auth/pages/RegisterPage'
 import { useAuthStore } from '@/features/auth/store/authStore'
 import { VisualizerPage } from '@/features/visualizer/pages/VisualizerPage'
+import { PlaygroundPage } from '@/features/playground/pages/PlaygroundPage'
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isAuthenticated } = useAuthStore()
@@ -73,7 +74,7 @@ export function AppRouter() {
         <Route path="/visualizer" element={<VisualizerPage />} />
         <Route path="/lab" element={<ComingSoonPage title="Performance Lab" />} />
         <Route path="/quiz" element={<ComingSoonPage title="Quiz" />} />
-        <Route path="/playground" element={<ComingSoonPage title="Coding Playground" />} />
+        <Route path="/playground" element={<PlaygroundPage />} />
         <Route
   path="/dashboard"
   element={
