@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { BookOpen, CheckCircle, Clock, Zap, ArrowRight } from 'lucide-react'
+import { BookOpen, CheckCircle, Clock, ArrowRight } from 'lucide-react'
 import { useAuthStore } from '@/features/auth/store/authStore'
 import { dashboardApi } from '../api/dashboard.api'
 import { StatCard } from '../components/StatCard'

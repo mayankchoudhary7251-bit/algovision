@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowRight, Github, Play } from 'lucide-react'
 
-function generateBubbleSortSteps(arr) {
+function generateBubbleSortSteps(arr: number[]) {
   const steps = []
   const a = [...arr]
   const sorted = []
@@ -45,7 +45,7 @@ function SortingVisualizer() {
   const { array, comparing, sorted } = STEPS[stepIndex]
   const maxVal = Math.max(...array)
 
-  function getBarColor(index) {
+  function getBarColor(index: number): string {
     if (sorted.includes(index)) return '#10b981'
     if (comparing !== null && comparing.includes(index)) return '#f59e0b'
     return '#6366f1'
